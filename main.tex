@@ -1,0 +1,51 @@
+\documentclass[12pt, a4paper]{article}
+
+% Pacote de imagens
+\usepackage{graphics}
+
+% Configuração de encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Normas ABNT
+\usepackage[top=3cm, left=3cm, right=2cm, bottom=2cm, headsep=2cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{indentfirst}
+\usepackage{url}
+
+% Idioma PT-BR
+\usepackage[brazil]{babel}
+
+\title{MC855 --- Relatório}
+\author{Giovanni Bertão 173325\\
+Guilherme Dumas Peres		173711\\ 
+Victor Andrietta Razoli Silva		187835\\
+William Gonçalves da Cruz		188671}
+\date{8 de maio de 2020}
+
+% Configuração de parágrafo seguindo ABNT
+\setlength{\parindent}{1.25cm}
+
+
+% Corpo do documento
+\begin{document}
+
+\maketitle
+
+\section{Definição do Problema}
+\label{sec:def}
+\input{tex/definicao}
+
+\section{Questões levantadas}
+\label{sec:quests}
+\input{tex/questoes}
+
+\section{Plano de Desenvolvimento}
+\label{sec:plano}
+\input{tex/plano}
+
+% Bibliografia
+\bibliography{referencias}
+\bibliographystyle{acm}
+
+\end{document}

@@ -1,0 +1,31 @@
+Essa seção detalha algumas questões levantadas durante a fase inicial do projeto.
+
+\begin{itemize}
+    \item Qual a arquitetura esperada da solução ?\\
+    A arquitetura do projeto visa garantir uma implementação distribuída para a solução. Com um conceito que demanda por agrupamento de usuários, cálculos constantes de compras e divisão, gateways de pagamentos para transferências monetárias, esse é um projeto que pede por uma solução distribuída de seus elementos principais.
+    
+    \item Como implementar a comunicação entre a API e o app ?\\
+O grupo decidiu usar a linguagem GRAPHQL~\cite{graphql}.
+
+\item Quais features o usuário espera do App?\\
+Autenticação, criar grupos de despesas, possibilidade de manipular os grupos, receber notificações pertinentes, poder atualizar o respectivo perfil e integração com formas de pagamento viáveis.
+
+\item Como conheço quem são os participantes do grupo?\\
+Possibilidade de consultar os membros de um grupo de despesas.
+
+\item Quais dados devem ser trocados entre a API e o app ?\\
+ Definição de interfaces de comunicação entre as partes, bem como modelos de dados que façam sentido para ambas as partes.
+
+\item Como a API deve gerar notificações para o APP ?\\
+Podemos usar um serviço (service worker) que roda em background no app e estabelece uma ponte de comunicação com a API (via socket) .
+
+\item Como autorizar a emissão de pagamentos no nome do usuário em um método de sua escolha sem obrigá-lo a efetuar um segundo login ?\\
+Criação do conceito de Convite, que permite a um usuário controlar a entrada e saída de outros usuários dentro de um grupo.
+
+\item Como decidir quem de fato vai participar da divisão, sendo que um usuário pode receber a notificação mas não querer participar da divisão.\\
+O usuário que recebe a notificação deve autorizar sua inclusão no grupo.
+
+\item Como vou saber o score de quem está no grupo da divisão antes de confirmar que quero participar dela ?\\
+Possibilidade de visualizar o score de um novo membro.
+
+\end{itemize}
